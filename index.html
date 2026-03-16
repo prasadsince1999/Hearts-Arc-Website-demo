@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Heart's Arc | Home</title>
+    <meta
+      content="Heart's Arc luxury jewelry homepage built to match the provided design reference."
+      name="description"
+    />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Caveat:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link href="assets/logo.css" rel="stylesheet" />
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#D4AF35",
+              "background-light": "#f8f7f6",
+              "background-dark": "#1a0b2e",
+              "accent-purple": "#2d164d",
+            },
+            fontFamily: {
+              display: ["Inter", "sans-serif"],
+            },
+            borderRadius: {
+              DEFAULT: "0.625rem",
+              lg: "0.625rem",
+              xl: "0.625rem",
+              full: "9999px",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+      }
+
+      .home-scroll {
+        height: 100vh;
+        overflow-y: auto;
+        overflow-x: hidden;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+      }
+
+      .home-scroll::-webkit-scrollbar {
+        width: 0;
+        height: 0;
+      }
+
+      .gold-glow {
+        box-shadow: 0 0 20px rgba(212, 175, 53, 0.2);
+      }
+    </style>
+  </head>
+  <body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-display selection:bg-primary selection:text-background-dark h-screen overflow-hidden">
+    <div class="home-scroll relative flex min-h-screen flex-col overflow-x-hidden">
+      <img
+        class="absolute top-0 left-0 w-64 h-64 opacity-40 pointer-events-none z-0 rotate-12"
+        alt=""
+        src="https://lh3.googleusercontent.com/aida-public/AB6AXuChnQ1ZCCMFsnxDpkYtGvlVL9aQTxpTtY1JoCQpB-bPqdvGf4pLr2cR9ueM3iNkI3abqjIpDllC7DrO4xQWXzNMnYT_3oSof6EUUbDyDd9fcW2mV4ZwNJfkXm9paf4E6WLt-tFatKZmiw5-pbrq3fj-BBGEMZtZIX1gZwwd1HRG-4crJsKBVvnCHH9kFUUqll2yLEAzNfEDHRnJeZBC0UdO3kBW9vB6Di3Z6KpZipJ7tQRZ4ofV5Gy0uhpcgEYpkE2zzIgOKsshetw3"
+      />
+      <img
+        class="absolute bottom-0 right-0 w-80 h-80 opacity-30 pointer-events-none z-0 -rotate-12"
+        alt=""
+        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDTeHbvSgqhBvp9qIFZy8xkPH22cHbORSmoQHGgA4OendI_aYSRAgjwCyBRO7hCTee_AnS56yCY_HO_5w_9ig_YYf8iAIycLB41U4iS4NC-UU09SvPNV0_fMwDohEeAQkXVtlW6Q3tjeD61vTR2tNIGDj6lVjxveZ2oKSMKiBNvurQpyDOLhyiRfqltrEFXTM_pucFczUYe4_ETA9kh5KkQhOG9Z728iNlyYIM5RQs-eCVe16sZwCmTIq3HA0p_EV3Uxm53OMyR4bjH"
+      />
+      <img
+        class="absolute top-1/2 -right-20 w-48 h-48 opacity-20 pointer-events-none z-0"
+        alt=""
+        src="https://lh3.googleusercontent.com/aida-public/AB6AXuANrvm2Ge3ThRUtAlCprAzb830zT2RA2Tl02t1FGpi2LtfS-FMwFPg0NO4zPa1xKkkda0qvGrrX04sAIo84zMGQpYJ9vxh4_MbsK7rC5lp4050IaSEJud95J7MQhNQT42n9uvskJHhM63eAdmYrs60iZFwU_JJHkDBLDh4NQajK97kBPaFGQDfat96qcCCWtuLrq1ES-2zv4P49DBwsrBiL9GLNPk3YkL9QsXFtCEyCRJkEh-jFlRyUpJvGXJOXYkbgcCm4HxJX3SOU"
+      />
+
+      <header class="relative z-10 flex items-center justify-between whitespace-nowrap border-b border-solid border-primary/20 px-6 md:px-20 py-5 bg-background-dark/80 backdrop-blur-md sticky top-0 z-50">
+          <div class="header-brand flex items-center gap-12">
+            <div class="header-brand flex items-center gap-3 text-primary">
+              <div class="logo-lockup">
+                <span class="logo-wordmark">HEART'S ARC</span>
+                <span class="logo-tagline">har tohfa ek ehsaas</span>
+              </div>
+            </div>
+            <nav class="header-nav hidden md:flex items-center gap-10">
+              <a class="nav-link nav-link--active text-slate-100 hover:text-primary transition-colors text-sm font-medium uppercase tracking-widest" href="index.html">Home</a>
+              <a class="nav-link text-slate-100 hover:text-primary transition-colors text-sm font-medium uppercase tracking-widest" href="gallery.html">Collections</a>
+              <a class="nav-link text-slate-100 hover:text-primary transition-colors text-sm font-medium uppercase tracking-widest" href="about.html">About</a>
+            </nav>
+          </div>
+          <div class="header-tools flex items-center gap-4">
+            <div class="header-tools hidden sm:flex items-center bg-accent-purple/50 border border-primary/20 rounded-full px-4 py-1">
+              <span class="material-symbols-outlined text-primary text-xl">search</span>
+              <input class="bg-transparent border-none focus:ring-0 text-sm text-white placeholder:text-primary/50 w-32 lg:w-48" placeholder="Search gems..." type="text" />
+            </div>
+            <div class="flex gap-2">
+              <a class="flex size-10 items-center justify-center rounded-lg bg-accent-purple/70 text-slate-100 hover:bg-primary hover:text-background-dark transition-colors" href="wishlist.html" aria-label="Wishlist">
+                <span class="material-symbols-outlined">favorite</span>
+              </a>
+              <a class="flex size-10 items-center justify-center rounded-lg bg-accent-purple/70 text-slate-100 hover:bg-primary hover:text-background-dark transition-colors relative" href="cart.html" aria-label="Shopping bag">
+                <span class="material-symbols-outlined">shopping_bag</span>
+                <span class="absolute -top-1 -right-1 bg-primary text-background-dark text-[10px] font-bold size-4 flex items-center justify-center rounded-full">2</span>
+              </a>
+              <a class="flex size-10 items-center justify-center rounded-lg bg-accent-purple/70 text-slate-100 hover:bg-primary hover:text-background-dark transition-colors" href="profile.html" aria-label="Profile">
+                <span class="material-symbols-outlined">person</span>
+              </a>
+            </div>
+            <button class="md:hidden text-primary" type="button">
+              <span class="material-symbols-outlined">menu</span>
+            </button>
+          </div>
+      </header>
+
+      <main class="relative z-10 flex-1">
+          <section class="px-6 md:px-20 pt-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+              <div class="rounded-xl border border-primary/15 bg-black/15 px-5 py-4 flex items-center gap-3">
+                <span class="material-symbols-outlined text-primary">verified</span>
+                <div>
+                  <p class="text-[10px] uppercase tracking-[0.25em] text-primary/70">Authenticity</p>
+                  <p class="text-sm text-white">Certified stones & hallmark metals</p>
+                </div>
+              </div>
+              <div class="rounded-xl border border-primary/15 bg-black/15 px-5 py-4 flex items-center gap-3">
+                <span class="material-symbols-outlined text-primary">local_shipping</span>
+                <div>
+                  <p class="text-[10px] uppercase tracking-[0.25em] text-primary/70">Delivery</p>
+                  <p class="text-sm text-white">Insured gifting delivery in 2-5 days</p>
+                </div>
+              </div>
+              <div class="rounded-xl border border-primary/15 bg-black/15 px-5 py-4 flex items-center gap-3">
+                <span class="material-symbols-outlined text-primary">card_giftcard</span>
+                <div>
+                  <p class="text-[10px] uppercase tracking-[0.25em] text-primary/70">Gift Ready</p>
+                  <p class="text-sm text-white">Luxury wrap, message card, concierge help</p>
+                </div>
+              </div>
+              <div class="rounded-xl border border-primary/15 bg-black/15 px-5 py-4 flex items-center gap-3">
+                <span class="material-symbols-outlined text-primary">support_agent</span>
+                <div>
+                  <p class="text-[10px] uppercase tracking-[0.25em] text-primary/70">Concierge</p>
+                  <p class="text-sm text-white">Call, WhatsApp, or track every order</p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <div class="px-6 md:px-20 py-10">
+            <div class="@container">
+              <div class="relative overflow-hidden rounded-xl bg-accent-purple border border-primary/10 gold-glow">
+                <div class="flex flex-col lg:flex-row min-h-[600px]">
+                  <div class="flex-1 flex flex-col justify-center p-8 md:p-16 z-20 bg-gradient-to-r from-background-dark via-background-dark/80 to-transparent">
+                    <span class="text-primary font-semibold tracking-[0.3em] uppercase mb-4 block">New Arrival</span>
+                    <h1 class="text-white text-5xl md:text-7xl font-black leading-tight tracking-tight mb-6">
+                      The Eternal <br /><span class="text-primary">Radiance</span>
+                    </h1>
+                    <p class="text-slate-300 text-lg md:text-xl max-w-lg mb-10 leading-relaxed font-light">
+                      A masterpiece of light and shadow. Hand-crafted 24k gold necklace featuring rare ethically sourced diamonds.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                      <a class="flex min-w-[200px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-14 px-8 bg-primary text-background-dark text-base font-bold uppercase tracking-wider hover:bg-white hover:scale-105 transition-all shadow-lg shadow-primary/20" href="gallery.html">
+                        Shop the Collection
+                      </a>
+                      <a class="flex min-w-[200px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-14 px-8 border-2 border-primary/40 text-primary text-base font-bold uppercase tracking-wider hover:bg-primary/10 transition-all" href="details.html">
+                        View Details
+                      </a>
+                    </div>
+                  </div>
+                  <div class="flex-1 relative min-h-[400px] lg:min-h-full">
+                    <div class="absolute inset-0 bg-center bg-no-repeat bg-cover" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA-YgJDgLef78w99VIrzF7JgP6EQq-0MMA2tlWeBNHaSRpDCBQ8jBOLxOmG8VWvr6xNZsNMxSbBmFi5UFtKzmqZUhdEMxobiZwyP4NPbZKTmYhMWamsmNxUNE_AUJVBgUBeBt0OSfR4II093YKuHycshTOt0LsvEDtXJpPoPr_fdtnB9ptuErR70K5EYH-SdDv2F6MuG39hGl_-GL8_xaZ453-Aq1CcPsmq8fHlpcwMwHMVfXHFvf5sagPs0sVmfWMhGZ_PEzzJk2dE");'></div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-background-dark/60 to-transparent lg:hidden"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <section class="px-6 md:px-20 pb-20">
+            <div class="flex items-end justify-between mb-10 border-l-4 border-primary pl-6">
+              <div>
+                <h2 class="text-white text-3xl font-bold tracking-tight">Our Signature Suites</h2>
+                <p class="text-primary/80 mt-2">Curated brilliance for every occasion</p>
+              </div>
+              <a class="hidden sm:flex items-center gap-2 text-primary hover:underline font-bold uppercase text-xs tracking-widest" href="gallery.html">
+                Browse All <span class="material-symbols-outlined text-sm">arrow_forward</span>
+              </a>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <a class="group relative overflow-hidden rounded-xl aspect-[4/5] border border-primary/10" href="gallery.html">
+                <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBG5S6JDl-qpWPjCgPZYz4LRoTxViJf866iIFYp72cd1LwkSfpt8wuX-m_Cesb_CgurJxDgiYOMK5CQRP2-2aseNx3_NppiI1e3WPcNFyqSrk8lq7QYZfRKLI1S1ItXkGzTQqG276-Q2up7gWrHXj21AVXFJzunmMttzKsEk25_tdJaNGKQnacLYy5ZSpta-rSr_ah_Nb_fwy8KMkzV1HRlujD0u0oKi_iJP2YOxyHfw9LKzB8nopHv4DvyZ8U9U4pU9GSkvJnG2mkk");'></div>
+                <div class="absolute inset-0 bg-gradient-to-t from-background-dark via-transparent to-transparent opacity-80"></div>
+                <div class="absolute bottom-0 left-0 p-8">
+                  <h3 class="text-white text-2xl font-bold mb-2">Eternal Rings</h3>
+                  <p class="text-slate-300 text-sm mb-4">Timeless bands for forever</p>
+                  <span class="text-primary text-sm font-bold uppercase tracking-widest border-b border-primary">Explore</span>
+                </div>
+              </a>
+              <a class="group relative overflow-hidden rounded-xl aspect-[4/5] border border-primary/10" href="gallery.html">
+                <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCVxF1DyBCGkQ_vKVAR4QgbvdfpHcFh-eL7IZWsqDEMvS0bblf_66x3qmMY6mSZLOSMQsTvFQFG6m5YyWD5ALAMeHZ-SoSxrWJ2Rvz6tklGsY7E9_GaG1_zBIQ1HGBG1o05owhhZIEqeZiNKNKm4E34R1YTgSaH71ASiS529v8aM1-WMEv-y8RfQqLnnWdZseInOSx0ZjDiCI0qb9RRfItEu7QIQlnFVaRnA_qHPR6Lb9UbslShst3X9nzD2dJzAk5cQ-tXfaRtXJ78");'></div>
+                <div class="absolute inset-0 bg-gradient-to-t from-background-dark via-transparent to-transparent opacity-80"></div>
+                <div class="absolute bottom-0 left-0 p-8">
+                  <h3 class="text-white text-2xl font-bold mb-2">Celestial Studs</h3>
+                  <p class="text-slate-300 text-sm mb-4">Capture the night sky</p>
+                  <span class="text-primary text-sm font-bold uppercase tracking-widest border-b border-primary">Explore</span>
+                </div>
+              </a>
+              <a class="group relative overflow-hidden rounded-xl aspect-[4/5] border border-primary/10" href="gallery.html">
+                <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDBUsfh9pQn4fn66tdPjInHoTmf_A5ZuVgFmh3wdKbbc-SxSoPWO5HUE3tUZwrk18U294XYpJ__9jCCEFQKVcnPjKr_CmN1MNAkb1MilxVV66IHpzaCsUlgEnnFzx5As_mQlmKVKuyA7TkeNvJN5dWuk8Y6Cknq0Ex3m8NCBdD8kjX8l0EZjXJy3ERUF2td44LTfzEftygtMxaDk6K9_47kFZBnqJPapAdCoJBwQwB2IUjTEWmeOv489uMOQIJ_H1SggllOvVyaHVw3");'></div>
+                <div class="absolute inset-0 bg-gradient-to-t from-background-dark via-transparent to-transparent opacity-80"></div>
+                <div class="absolute bottom-0 left-0 p-8">
+                  <h3 class="text-white text-2xl font-bold mb-2">Golden Cuffs</h3>
+                  <p class="text-slate-300 text-sm mb-4">Bold statements of luxury</p>
+                  <span class="text-primary text-sm font-bold uppercase tracking-widest border-b border-primary">Explore</span>
+                </div>
+              </a>
+            </div>
+          </section>
+          <section class="px-6 md:px-20 pb-20">
+            <div class="flex items-end justify-between mb-10">
+              <div>
+                <span class="text-primary text-xs font-bold uppercase tracking-[0.3em]">Gift by Occasion</span>
+                <h2 class="text-white text-3xl font-bold mt-3">Moments Worth Wrapping Beautifully</h2>
+              </div>
+              <a class="hidden sm:inline-flex text-primary text-xs font-bold uppercase tracking-widest hover:underline" href="gallery.html">Shop Gift Edits</a>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <a class="rounded-xl border border-primary/10 bg-gradient-to-br from-white/5 to-transparent p-8 hover:border-primary/40 transition-colors" href="gallery.html">
+                <p class="text-primary text-xs uppercase tracking-[0.25em] mb-3">Wedding Gift</p>
+                <h3 class="text-2xl font-bold text-white mb-2">Ceremony Keepsakes</h3>
+                <p class="text-slate-300 text-sm mb-6">Elegant heirloom-ready pieces for brides, mothers, and the inner circle.</p>
+                <span class="inline-flex items-center gap-2 text-primary font-semibold">Discover <span class="material-symbols-outlined text-sm">arrow_forward</span></span>
+              </a>
+              <a class="rounded-xl border border-primary/10 bg-gradient-to-br from-white/5 to-transparent p-8 hover:border-primary/40 transition-colors" href="gallery.html">
+                <p class="text-primary text-xs uppercase tracking-[0.25em] mb-3">Anniversary</p>
+                <h3 class="text-2xl font-bold text-white mb-2">Modern Love Notes</h3>
+                <p class="text-slate-300 text-sm mb-6">Diamond signatures, celestial rings, and meaningful gold silhouettes.</p>
+                <span class="inline-flex items-center gap-2 text-primary font-semibold">Curate <span class="material-symbols-outlined text-sm">arrow_forward</span></span>
+              </a>
+              <a class="rounded-xl border border-primary/10 bg-gradient-to-br from-white/5 to-transparent p-8 hover:border-primary/40 transition-colors" href="gallery.html">
+                <p class="text-primary text-xs uppercase tracking-[0.25em] mb-3">Birthdays</p>
+                <h3 class="text-2xl font-bold text-white mb-2">Giftable Treasures</h3>
+                <p class="text-slate-300 text-sm mb-6">Personal notes, gemstone stories, and concierge-picked keepsakes for every milestone.</p>
+                <span class="inline-flex items-center gap-2 text-primary font-semibold">Explore <span class="material-symbols-outlined text-sm">arrow_forward</span></span>
+              </a>
+            </div>
+          </section>
+          <section class="px-6 md:px-20 pb-20">
+            <div class="flex items-end justify-between mb-10">
+              <div>
+                <span class="text-primary text-xs font-bold uppercase tracking-[0.3em]">Best Sellers</span>
+                <h2 class="text-white text-3xl font-bold mt-3">Most Loved for Gifting</h2>
+              </div>
+              <div class="hidden md:flex items-center gap-3 text-xs uppercase tracking-widest text-slate-400">
+                <span>4.9/5 average reviews</span>
+                <span class="w-1 h-1 rounded-full bg-primary/60"></span>
+                <span>2,400+ happy gifting moments</span>
+              </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <div class="rounded-xl border border-primary/10 bg-black/15 overflow-hidden">
+                <div class="aspect-[4/5] bg-cover bg-center" style='background-image:url("https://lh3.googleusercontent.com/aida-public/AB6AXuC3fVBGgoyJNeaoyjjjZGE5tlGjE_e1E3q8_-nJSkRVTKlRmtlbNIwkAGtZslSiyukKmqBjH_QYK-cWY14TI8hl6mjbL_a1C6HRErjsd6Ia92TLzQVO815o3kKeYHqgyPLKyzqK5KSkuuYRX2yDRIXpB1SjFKrpw4473fqZq9nbLdNp9nl6NsA56ytaKhDQF-QVgmriLA2kyFCsUbhFExDB-woGauk5fVQFRj7D3l0C0QAGyscyHhdJLAhjWdaPYeSH-K9AQIf8yrN-");'></div>
+                <div class="p-6">
+                  <div class="flex items-center justify-between mb-2">
+                    <h3 class="text-xl text-white font-bold">Veridian Drop Earrings</h3>
+                    <span class="text-primary font-bold">$8,900</span>
+                  </div>
+                  <div class="flex items-center gap-3 text-[11px] uppercase tracking-widest mb-4">
+                    <span class="px-2 py-1 rounded-full bg-primary/15 text-primary">Bestseller</span>
+                    <span class="text-slate-400">Giftable</span>
+                  </div>
+                  <p class="text-sm text-slate-300 mb-5">Includes handwritten message card and couture gift wrapping.</p>
+                  <a class="inline-flex items-center gap-2 text-primary font-semibold" href="details.html">View details <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+                </div>
+              </div>
+              <div class="rounded-xl border border-primary/10 bg-black/15 overflow-hidden">
+                <div class="aspect-[4/5] bg-cover bg-center" style='background-image:url("https://lh3.googleusercontent.com/aida-public/AB6AXuCK6joiTNHAZYl-NetmUry9PAr5Ynp-G_pDV8c_zMHmwhiEQcu9iVScE_XcJN0URB0VMJoAD6hn-LbCFyjJpWhsE8pr32AwJt7uEK-PVC5CnZvMqznJBA-opJZ7TNccEtdWtvlbKDCVjoAMgSr1uyiVkhDFE89cL3D-Q3ykFs0X5YK00zaqDvYhOcKqn6wi5fyGTatbAcVI9RVJqAOCeCwo7TjhxNZEgyo_vhQCsH8wOnTN76R5RNrfzwxoEdE9sy_C88t1MZYgOcg4");'></div>
+                <div class="p-6">
+                  <div class="flex items-center justify-between mb-2">
+                    <h3 class="text-xl text-white font-bold">Celestial Chain</h3>
+                    <span class="text-primary font-bold">$22,500</span>
+                  </div>
+                  <div class="flex items-center gap-3 text-[11px] uppercase tracking-widest mb-4">
+                    <span class="px-2 py-1 rounded-full bg-primary/15 text-primary">New Arrival</span>
+                    <span class="text-slate-400">Insured delivery</span>
+                  </div>
+                  <p class="text-sm text-slate-300 mb-5">A signature statement piece with certification, care, and gifting concierge included.</p>
+                  <a class="inline-flex items-center gap-2 text-primary font-semibold" href="details.html">Shop now <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+                </div>
+              </div>
+              <div class="rounded-xl border border-primary/10 bg-black/15 overflow-hidden">
+                <div class="aspect-[4/5] bg-cover bg-center" style='background-image:url("https://lh3.googleusercontent.com/aida-public/AB6AXuBE63Rc8POtfi-lQh107NxfNPa67wAldS9mS4UrKd_t-i6gFq2eRKCDWQ78qzPx1lIZq24EwkumgC55lCs3WdZNFu0b9A_bX5sLR3invgC0-H9uobt4YwUPEP21iWxE24LW65GmRn43Nkrpr-mjtY2rHUZr1aAAtAUYSUXZCBnHlBpJR9H9VNBd5GE9dXrtPSkPo9xYl-1w_cIqtIeoaa10ZLuyd-B3SL0smaimNU_1aymm3dIXTNko9Gjyy2aqOjR23zKTz3qVZaMG");'></div>
+                <div class="p-6">
+                  <div class="flex items-center justify-between mb-2">
+                    <h3 class="text-xl text-white font-bold">Astral Solitaire Ring</h3>
+                    <span class="text-primary font-bold">$14,200</span>
+                  </div>
+                  <div class="flex items-center gap-3 text-[11px] uppercase tracking-widest mb-4">
+                    <span class="px-2 py-1 rounded-full bg-primary/15 text-primary">Top Rated</span>
+                    <span class="text-slate-400">Engraving available</span>
+                  </div>
+                  <p class="text-sm text-slate-300 mb-5">A proposal and anniversary favorite with premium gifting support.</p>
+                  <a class="inline-flex items-center gap-2 text-primary font-semibold" href="details.html">See why <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="px-6 md:px-20 pb-20">
+            <div class="rounded-xl border border-primary/15 bg-gradient-to-r from-[#241038] via-[#2a1445] to-[#34185a] p-8 md:p-10">
+              <div class="grid grid-cols-1 lg:grid-cols-[1.2fr_0.8fr] gap-10 items-center">
+                <div>
+                  <span class="text-primary text-xs font-bold uppercase tracking-[0.3em]">Personalized Gifting</span>
+                  <h2 class="text-white text-3xl md:text-4xl font-bold mt-4 mb-4">Make every Heart's Arc order feel like a private presentation.</h2>
+                  <p class="text-slate-300 max-w-2xl leading-relaxed mb-8">Add a gift note, request special wrapping, choose the occasion, and let our concierge prepare a premium unboxing experience that feels intentional from doorstep to jewelry box.</p>
+                  <div class="flex flex-wrap gap-3 text-sm">
+                    <span class="px-4 py-2 rounded-full border border-primary/20 text-slate-200">Gift wrap add-on</span>
+                    <span class="px-4 py-2 rounded-full border border-primary/20 text-slate-200">Message card</span>
+                    <span class="px-4 py-2 rounded-full border border-primary/20 text-slate-200">WhatsApp concierge</span>
+                    <span class="px-4 py-2 rounded-full border border-primary/20 text-slate-200">Track order updates</span>
+                  </div>
+                </div>
+                <div class="rounded-xl border border-primary/20 bg-black/15 p-6">
+                  <h3 class="text-white font-bold text-xl mb-6">Why clients trust Heart's Arc</h3>
+                  <div class="space-y-4 text-sm text-slate-300">
+                    <div class="flex items-start gap-3"><span class="material-symbols-outlined text-primary">diamond</span><span>Hallmarked metals, certified stones, and care guidance included.</span></div>
+                    <div class="flex items-start gap-3"><span class="material-symbols-outlined text-primary">chat</span><span>Direct gifting support for anniversaries, weddings, and milestone moments.</span></div>
+                    <div class="flex items-start gap-3"><span class="material-symbols-outlined text-primary">workspace_premium</span><span>Review-backed products with premium packaging and insured delivery.</span></div>
+                  </div>
+                  <a class="mt-6 inline-flex items-center gap-2 text-primary font-semibold" href="support.html">Explore support & policies <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="px-6 md:px-20 pb-24">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div class="rounded-xl border border-primary/10 bg-black/10 p-6">
+                <p class="text-primary text-3xl font-black mb-3">4.9/5</p>
+                <p class="text-white font-semibold mb-2">Customer reflections</p>
+                <p class="text-sm text-slate-400">Consistently praised for gifting presentation, concierge care, and premium finishing.</p>
+              </div>
+              <div class="rounded-xl border border-primary/10 bg-black/10 p-6">
+                <p class="text-primary text-3xl font-black mb-3">48 hrs</p>
+                <p class="text-white font-semibold mb-2">Concierge response</p>
+                <p class="text-sm text-slate-400">Fast support for product guidance, gifting help, and order tracking assistance.</p>
+              </div>
+              <div class="rounded-xl border border-primary/10 bg-black/10 p-6">
+                <p class="text-primary text-3xl font-black mb-3">2,400+</p>
+                <p class="text-white font-semibold mb-2">Gift moments served</p>
+                <p class="text-sm text-slate-400">A growing archive of anniversaries, proposals, and milestone presents delivered beautifully.</p>
+              </div>
+            </div>
+          </section>
+      </main>
+
+      <footer class="relative z-10 bg-accent-purple/30 border-t border-primary/10 py-12 px-6 md:px-20">
+          <div class="flex flex-col md:flex-row justify-between items-start gap-12">
+            <div class="max-w-sm">
+              <div class="flex items-center gap-3 text-primary mb-6">
+                <div class="logo-lockup logo-lockup--footer">
+                  <span class="logo-wordmark">HEART'S ARC</span>
+                  <span class="logo-tagline">har tohfa ek ehsaas</span>
+                </div>
+              </div>
+              <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                A premium jewelry boutique shaped for gifting, trust, and quiet luxury. Discover certified pieces, concierge support, and beautifully wrapped delivery.
+              </p>
+              <div class="flex gap-4">
+                <a class="w-10 h-10 rounded-full border border-primary/20 flex items-center justify-center text-primary hover:bg-primary hover:text-background-dark transition-all" href="#">
+                  <span class="material-symbols-outlined text-lg">public</span>
+                </a>
+                <a class="w-10 h-10 rounded-full border border-primary/20 flex items-center justify-center text-primary hover:bg-primary hover:text-background-dark transition-all" href="#">
+                  <span class="material-symbols-outlined text-lg">camera</span>
+                </a>
+                <a class="w-10 h-10 rounded-full border border-primary/20 flex items-center justify-center text-primary hover:bg-primary hover:text-background-dark transition-all" href="#">
+                  <span class="material-symbols-outlined text-lg">mail</span>
+                </a>
+              </div>
+            </div>
+            <div class="grid grid-cols-2 sm:grid-cols-3 gap-12 w-full md:w-auto">
+              <div>
+                <h4 class="text-white font-bold uppercase tracking-widest text-xs mb-6">Shop</h4>
+                <ul class="space-y-4 text-sm text-slate-400">
+                  <li><a class="hover:text-primary transition-colors" href="gallery.html">Giftable Jewelry</a></li>
+                  <li><a class="hover:text-primary transition-colors" href="gallery.html">Bridal & Anniversary</a></li>
+                  <li><a class="hover:text-primary transition-colors" href="gallery.html">New Arrivals</a></li>
+                  <li><a class="hover:text-primary transition-colors" href="details.html">Featured Piece</a></li>
+                </ul>
+              </div>
+              <div>
+                <h4 class="text-white font-bold uppercase tracking-widest text-xs mb-6">Support</h4>
+                <ul class="space-y-4 text-sm text-slate-400">
+                  <li><a class="hover:text-primary transition-colors" href="support.html#care">Care Guide</a></li>
+                  <li><a class="hover:text-primary transition-colors" href="support.html#shipping">Shipping</a></li>
+                  <li><a class="hover:text-primary transition-colors" href="support.html#returns">Returns</a></li>
+                  <li><a class="hover:text-primary transition-colors" href="support.html#contact">Concierge</a></li>
+                </ul>
+              </div>
+              <div class="col-span-2 sm:col-span-1">
+                <h4 class="text-white font-bold uppercase tracking-widest text-xs mb-6">Contact</h4>
+                <p class="text-sm text-slate-400 leading-relaxed">
+                  Concierge: +91 98765 43210<br />
+                  hello@heartsarc.com<br />
+                  Mon-Sat, 10AM-7PM IST
+                </p>
+                <div class="mt-6 flex gap-2">
+                  <input class="flex-1 bg-white/5 border border-primary/15 rounded-lg px-4 py-2.5 text-sm text-slate-100 focus:ring-primary focus:border-primary" placeholder="Email Address" type="email" />
+                  <button class="bg-primary text-background-dark px-4 py-2.5 rounded-lg font-bold text-xs uppercase transition-all hover:brightness-110">Join</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mt-20 pt-8 border-t border-primary/5 flex flex-col sm:flex-row justify-between items-center gap-4 text-[10px] text-slate-500 uppercase tracking-widest">
+            <p>© 2026 HEART'S ARC. All rights reserved.</p>
+            <div class="flex gap-8">
+              <a class="hover:text-primary" href="support.html#faq">FAQs</a>
+              <a class="hover:text-primary" href="support.html#track">Track Order</a>
+              <a class="hover:text-primary" href="support.html#shipping">Shipping & Returns</a>
+            </div>
+          </div>
+      </footer>
+    </div>
+  </body>
+</html>

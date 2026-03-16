@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Heart's Arc | About</title>
+    <meta
+      content="Learn about Heart's Arc, the story behind the website, and the experience we are crafting."
+      name="description"
+    />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Caveat:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link href="assets/logo.css" rel="stylesheet" />
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#D4AF35",
+              "background-light": "#f8f7f6",
+              "background-dark": "#1a0b2e",
+              "accent-purple": "#2d164d",
+            },
+            fontFamily: {
+              display: ["Inter", "sans-serif"],
+            },
+            borderRadius: {
+              DEFAULT: "0.625rem",
+              lg: "0.625rem",
+              xl: "0.625rem",
+              full: "9999px",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .about-scroll {
+        height: 100vh;
+        overflow-y: auto;
+        overflow-x: hidden;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+      }
+
+      .about-scroll::-webkit-scrollbar {
+        width: 0;
+        height: 0;
+      }
+
+      body {
+        font-family: "Inter", sans-serif;
+      }
+
+      .about-card {
+        background:
+          radial-gradient(circle at top left, rgba(173, 117, 226, 0.16), transparent 30%),
+          radial-gradient(circle at bottom right, rgba(212, 175, 53, 0.1), transparent 28%),
+          linear-gradient(180deg, #33124f 0%, #230d39 100%);
+        box-shadow: 0 0 30px rgba(212, 175, 53, 0.12);
+      }
+
+      .about-frame::before,
+      .about-frame::after {
+        content: "";
+        position: absolute;
+        inset: 1.1rem;
+        border: 2px solid rgba(212, 175, 53, 0.78);
+        pointer-events: none;
+      }
+
+      .about-frame::after {
+        inset: 1.75rem;
+        border-color: rgba(212, 175, 53, 0.22);
+      }
+    </style>
+  </head>
+  <body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-display selection:bg-primary selection:text-background-dark h-screen overflow-hidden">
+    <div class="about-scroll relative flex min-h-screen flex-col overflow-x-hidden">
+      <img
+        class="absolute top-0 left-0 w-64 h-64 opacity-40 pointer-events-none z-0 rotate-12"
+        alt=""
+        src="https://lh3.googleusercontent.com/aida-public/AB6AXuChnQ1ZCCMFsnxDpkYtGvlVL9aQTxpTtY1JoCQpB-bPqdvGf4pLr2cR9ueM3iNkI3abqjIpDllC7DrO4xQWXzNMnYT_3oSof6EUUbDyDd9fcW2mV4ZwNJfkXm9paf4E6WLt-tFatKZmiw5-pbrq3fj-BBGEMZtZIX1gZwwd1HRG-4crJsKBVvnCHH9kFUUqll2yLEAzNfEDHRnJeZBC0UdO3kBW9vB6Di3Z6KpZipJ7tQRZ4ofV5Gy0uhpcgEYpkE2zzIgOKsshetw3"
+      />
+      <img
+        class="absolute bottom-0 right-0 w-80 h-80 opacity-30 pointer-events-none z-0 -rotate-12"
+        alt=""
+        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDTeHbvSgqhBvp9qIFZy8xkPH22cHbORSmoQHGgA4OendI_aYSRAgjwCyBRO7hCTee_AnS56yCY_HO_5w_9ig_YYf8iAIycLB41U4iS4NC-UU09SvPNV0_fMwDohEeAQkXVtlW6Q3tjeD61vTR2tNIGDj6lVjxveZ2oKSMKiBNvurQpyDOLhyiRfqltrEFXTM_pucFczUYe4_ETA9kh5KkQhOG9Z728iNlyYIM5RQs-eCVe16sZwCmTIq3HA0p_EV3Uxm53OMyR4bjH"
+      />
+      <img
+        class="absolute top-1/2 -right-20 w-48 h-48 opacity-20 pointer-events-none z-0"
+        alt=""
+        src="https://lh3.googleusercontent.com/aida-public/AB6AXuANrvm2Ge3ThRUtAlCprAzb830zT2RA2Tl02t1FGpi2LtfS-FMwFPg0NO4zPa1xKkkda0qvGrrX04sAIo84zMGQpYJ9vxh4_MbsK7rC5lp4050IaSEJud95J7MQhNQT42n9uvskJHhM63eAdmYrs60iZFwU_JJHkDBLDh4NQajK97kBPaFGQDfat96qcCCWtuLrq1ES-2zv4P49DBwsrBiL9GLNPk3YkL9QsXFtCEyCRJkEh-jFlRyUpJvGXJOXYkbgcCm4HxJX3SOU"
+      />
+
+      <header class="relative z-10 flex items-center justify-between whitespace-nowrap border-b border-solid border-primary/20 px-6 md:px-20 py-5 bg-background-dark/80 backdrop-blur-md sticky top-0 z-50">
+        <div class="header-brand flex items-center gap-12">
+          <div class="header-brand flex items-center gap-3 text-primary">
+            <div class="logo-lockup">
+              <span class="logo-wordmark">HEART'S ARC</span>
+              <span class="logo-tagline">har tohfa ek ehsaas</span>
+            </div>
+          </div>
+          <nav class="header-nav hidden md:flex items-center gap-10">
+            <a class="nav-link text-slate-100 hover:text-primary transition-colors text-sm font-medium uppercase tracking-widest" href="index.html">Home</a>
+            <a class="nav-link text-slate-100 hover:text-primary transition-colors text-sm font-medium uppercase tracking-widest" href="gallery.html">Collections</a>
+            <a class="nav-link nav-link--active text-slate-100 hover:text-primary transition-colors text-sm font-medium uppercase tracking-widest" href="about.html">About</a>
+          </nav>
+        </div>
+        <div class="header-tools flex items-center gap-4">
+          <div class="header-tools hidden sm:flex items-center bg-accent-purple/50 border border-primary/20 rounded-full px-4 py-1">
+            <span class="material-symbols-outlined text-primary text-xl">search</span>
+            <input class="bg-transparent border-none focus:ring-0 text-sm text-white placeholder:text-primary/50 w-32 lg:w-48" placeholder="Search gems..." type="text" />
+          </div>
+          <div class="flex gap-2">
+            <a class="flex size-10 items-center justify-center rounded-lg bg-accent-purple/70 text-slate-100 hover:bg-primary hover:text-background-dark transition-colors" href="wishlist.html" aria-label="Wishlist">
+              <span class="material-symbols-outlined">favorite</span>
+            </a>
+            <a class="flex size-10 items-center justify-center rounded-lg bg-accent-purple/70 text-slate-100 hover:bg-primary hover:text-background-dark transition-colors relative" href="cart.html" aria-label="Shopping bag">
+              <span class="material-symbols-outlined">shopping_bag</span>
+              <span class="absolute -top-1 -right-1 bg-primary text-background-dark text-[10px] font-bold size-4 flex items-center justify-center rounded-full">2</span>
+            </a>
+            <a class="flex size-10 items-center justify-center rounded-lg bg-accent-purple/70 text-slate-100 hover:bg-primary hover:text-background-dark transition-colors" href="profile.html" aria-label="Profile">
+              <span class="material-symbols-outlined">person</span>
+            </a>
+          </div>
+        </div>
+      </header>
+
+      <main class="relative z-10 flex-1 px-6 md:px-20 py-12 md:py-16 flex items-center justify-center">
+        <section class="w-full max-w-5xl">
+          <div class="about-card about-frame relative overflow-hidden rounded-xl border border-primary/30 min-h-[760px] flex items-center justify-center px-8 py-12 md:px-16">
+            <img
+              class="absolute top-0 right-0 w-64 opacity-85 pointer-events-none"
+              alt=""
+              src="https://images.unsplash.com/photo-1635767798638-3e25273a8236?auto=format&fit=crop&w=800&q=80"
+            />
+            <img
+              class="absolute bottom-0 left-0 w-72 opacity-85 pointer-events-none rotate-180"
+              alt=""
+              src="https://images.unsplash.com/photo-1635767798638-3e25273a8236?auto=format&fit=crop&w=800&q=80"
+            />
+
+            <div class="absolute top-16 left-14 text-primary/40 text-6xl pointer-events-none">✦</div>
+            <div class="absolute top-32 left-24 text-violet-300/70 text-3xl pointer-events-none">• • •</div>
+            <div class="absolute bottom-24 right-24 text-primary/40 text-6xl pointer-events-none">✦</div>
+            <div class="absolute bottom-36 right-40 text-violet-300/70 text-3xl pointer-events-none">• •</div>
+
+            <div class="relative max-w-2xl text-center">
+              <span class="text-primary text-xs md:text-sm font-semibold tracking-[0.35em] uppercase block mb-6">About Heart's Arc</span>
+              <h1 class="text-white text-4xl md:text-6xl font-black leading-tight tracking-tight mb-8">
+                A digital jewelry boutique shaped with feeling, detail, and quiet luxury.
+              </h1>
+              <p class="text-slate-200 text-lg md:text-2xl leading-relaxed font-light">
+                Heart's Arc is a curated showcase for elegant jewelry design, built to present collections, signature pieces, and shopping experiences with the richness of a premium boutique. This website combines refined visuals, smooth navigation, and a luxurious purple-and-gold aesthetic so every page feels like a thoughtful gift in itself.
+              </p>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="relative z-10 bg-accent-purple/30 border-t border-primary/10 py-12 px-6 md:px-20">
+        <div class="flex flex-col md:flex-row justify-between items-start gap-12">
+          <div class="max-w-sm">
+            <div class="flex items-center gap-3 text-primary mb-6">
+              <div class="logo-lockup logo-lockup--footer">
+                <span class="logo-wordmark">HEART'S ARC</span>
+                <span class="logo-tagline">har tohfa ek ehsaas</span>
+              </div>
+            </div>
+            <p class="text-slate-400 text-sm leading-relaxed mb-6">
+              Heart's Arc is designed as a graceful digital home for collectible jewelry, storytelling, and a polished luxury shopping experience.
+            </p>
+          </div>
+          <div class="grid grid-cols-2 sm:grid-cols-3 gap-12 w-full md:w-auto">
+            <div>
+              <h4 class="text-white font-bold uppercase tracking-widest text-xs mb-6">Explore</h4>
+              <ul class="space-y-4 text-sm text-slate-400">
+                <li><a class="hover:text-primary transition-colors" href="index.html">Home</a></li>
+                <li><a class="hover:text-primary transition-colors" href="gallery.html">Collections</a></li>
+                <li><a class="hover:text-primary transition-colors" href="details.html">Featured Piece</a></li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="text-white font-bold uppercase tracking-widest text-xs mb-6">Support</h4>
+              <ul class="space-y-4 text-sm text-slate-400">
+                <li><a class="hover:text-primary transition-colors" href="support.html#faq">FAQs</a></li>
+                <li><a class="hover:text-primary transition-colors" href="support.html#shipping">Shipping</a></li>
+                <li><a class="hover:text-primary transition-colors" href="support.html#contact">Concierge</a></li>
+              </ul>
+            </div>
+            <div class="col-span-2 sm:col-span-1">
+              <h4 class="text-white font-bold uppercase tracking-widest text-xs mb-6">Contact</h4>
+              <p class="text-sm text-slate-400 leading-relaxed">
+                Concierge: +91 98765 43210<br />
+                hello@heartsarc.com<br />
+                Mon-Sat, 10AM-7PM IST
+              </p>
+              <div class="mt-6 flex gap-2">
+                <input class="flex-1 bg-white/5 border border-primary/15 rounded-lg px-4 py-2.5 text-sm text-slate-100 focus:ring-primary focus:border-primary" placeholder="Email Address" type="email" />
+                <button class="bg-primary text-background-dark px-4 py-2.5 rounded-lg font-bold text-xs uppercase transition-all hover:brightness-110">Join</button>
+              </div>
+            </div>
+          </div>
+        </div>
+          <div class="mt-20 pt-8 border-t border-primary/5 flex flex-col sm:flex-row justify-between items-center gap-4 text-[10px] text-slate-500 uppercase tracking-widest">
+          <p>© 2026 HEART'S ARC. All rights reserved.</p>
+          <div class="flex gap-8">
+            <a class="hover:text-primary" href="support.html#faq">FAQs</a>
+            <a class="hover:text-primary" href="support.html#track">Track Order</a>
+            <a class="hover:text-primary" href="support.html#shipping">Shipping & Returns</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

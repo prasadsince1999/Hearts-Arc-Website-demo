@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#d4af35",
+                        "background-light": "#f8f7f6",
+                        "background-dark": "#1a0f2e", // Deep purple variant of the background
+                        "neutral-dark": "#2d1b4d",
+                        "neutral-muted": "#4a3575",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<title>Shopping Bag | Luxury Jewelry</title>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 min-h-screen">
+<div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<!-- Navigation -->
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-primary/20 px-6 md:px-20 py-4 bg-background-dark/50 backdrop-blur-md sticky top-0 z-50">
+<div class="flex items-center gap-4">
+<div class="text-primary size-8">
+<span class="material-symbols-outlined text-4xl">storm</span>
+</div>
+<h2 class="text-primary text-xl font-bold leading-tight tracking-tight uppercase">Aurelia</h2>
+</div>
+<div class="flex flex-1 justify-end gap-4 items-center">
+<nav class="hidden md:flex gap-8 mr-8">
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Collections</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">High Jewelry</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Our Story</a>
+</nav>
+<div class="flex gap-2">
+<button class="flex size-10 items-center justify-center rounded-lg bg-neutral-dark text-slate-100 hover:bg-neutral-muted transition-colors">
+<span class="material-symbols-outlined">search</span>
+</button>
+<button class="flex size-10 items-center justify-center rounded-lg bg-neutral-dark text-slate-100 hover:bg-neutral-muted transition-colors relative">
+<span class="material-symbols-outlined">shopping_bag</span>
+<span class="absolute -top-1 -right-1 bg-primary text-background-dark text-[10px] font-bold size-4 flex items-center justify-center rounded-full">3</span>
+</button>
+<button class="flex size-10 items-center justify-center rounded-lg bg-neutral-dark text-slate-100 hover:bg-neutral-muted transition-colors">
+<span class="material-symbols-outlined">person</span>
+</button>
+</div>
+</div>
+</header>
+<main class="flex-1 px-6 md:px-20 py-10 lg:py-16">
+<div class="max-w-6xl mx-auto">
+<h1 class="text-4xl md:text-5xl font-black mb-2 tracking-tight">Your Shopping Bag</h1>
+<p class="text-primary/70 text-lg mb-10">Review your exquisite selections before checkout.</p>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+<!-- Items List -->
+<div class="lg:col-span-2 space-y-6">
+<!-- Item 1 -->
+<div class="flex flex-col sm:flex-row gap-6 p-6 rounded-xl bg-neutral-dark/40 border border-primary/10 items-center sm:items-start">
+<div class="w-32 h-32 flex-shrink-0 bg-center bg-cover rounded-lg border border-primary/20" data-alt="Diamond solitaire engagement ring in white gold" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDTr75LbRZDHfSrueDAe3OUKaLqMLAf61p3pk5b6fiH81eXAGS1oWbBQsE7zDh16dNRLS96cL2p2IV1mvd89DkEAJfUJrBHnBksKyNJkxDHiZ2wncin9oNSRkxL5GTPlPKE6NZrb3g0Z22lrgdm8pDQDFZWZDGCy4QHY-J5ez10Zbd5Y5MqxelXIY7Fn0yjs7xQ7u7Hwt7rxPKcQ1gyAxNBeuRNf3-onNzhlvo66ep0tNEBidF34LHEA8MKU8vqaEUaLAIMJsH14kBa");'></div>
+<div class="flex flex-1 flex-col justify-between h-full text-center sm:text-left">
+<div>
+<h3 class="text-xl font-bold text-slate-100">Celestial Solitaire Ring</h3>
+<p class="text-primary/60 text-sm mt-1">18k White Gold • 2.0 Carat VS1 Diamond</p>
+</div>
+<div class="mt-4 flex flex-wrap items-center justify-center sm:justify-start gap-6">
+<div class="flex items-center gap-3 bg-background-dark border border-primary/20 rounded-lg p-1">
+<button class="size-8 flex items-center justify-center rounded hover:bg-primary/20 transition-colors"><span class="material-symbols-outlined text-sm">remove</span></button>
+<span class="w-6 text-center font-bold">1</span>
+<button class="size-8 flex items-center justify-center rounded hover:bg-primary/20 transition-colors"><span class="material-symbols-outlined text-sm">add</span></button>
+</div>
+<button class="text-sm text-slate-400 hover:text-red-400 flex items-center gap-1 transition-colors">
+<span class="material-symbols-outlined text-lg">delete</span> Remove
+                                        </button>
+</div>
+</div>
+<div class="text-right flex flex-col items-center sm:items-end justify-between">
+<p class="text-2xl font-bold text-primary">$8,450.00</p>
+<p class="text-xs text-slate-500 uppercase tracking-widest mt-2">SKU: AUR-7721</p>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="flex flex-col sm:flex-row gap-6 p-6 rounded-xl bg-neutral-dark/40 border border-primary/10 items-center sm:items-start">
+<div class="w-32 h-32 flex-shrink-0 bg-center bg-cover rounded-lg border border-primary/20" data-alt="Gold leaf design luxury earrings" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBKhbZsln4kNRteYMieMu5OVOg_bwxlAtnpaV4zUVGaY_dBpP983ZIfJfvuM-8Ec5Hf3w8tbQvz1blfeQlSuowJghTzAgO44EtRlk4m0KvKdJRA8i-AXKNos6ApzAk6pccOdos02sEFClsoM1AFvsjMAxbxMrTagGvNTU3emeSrOmrAYUGmXXv55IR1M7twNIX3CpqMFu-huo7harl28E0b2nrPoY89Dc3DK8710WDtxnfjKfDWdcd_KJzEv1rEhZEgW6TTE6OWREYH");'></div>
+<div class="flex flex-1 flex-col justify-between h-full text-center sm:text-left">
+<div>
+<h3 class="text-xl font-bold text-slate-100">Elysian Leaf Earrings</h3>
+<p class="text-primary/60 text-sm mt-1">24k Yellow Gold • Hand-carved Detailing</p>
+</div>
+<div class="mt-4 flex flex-wrap items-center justify-center sm:justify-start gap-6">
+<div class="flex items-center gap-3 bg-background-dark border border-primary/20 rounded-lg p-1">
+<button class="size-8 flex items-center justify-center rounded hover:bg-primary/20 transition-colors"><span class="material-symbols-outlined text-sm">remove</span></button>
+<span class="w-6 text-center font-bold">1</span>
+<button class="size-8 flex items-center justify-center rounded hover:bg-primary/20 transition-colors"><span class="material-symbols-outlined text-sm">add</span></button>
+</div>
+<button class="text-sm text-slate-400 hover:text-red-400 flex items-center gap-1 transition-colors">
+<span class="material-symbols-outlined text-lg">delete</span> Remove
+                                        </button>
+</div>
+</div>
+<div class="text-right flex flex-col items-center sm:items-end justify-between">
+<p class="text-2xl font-bold text-primary">$2,200.00</p>
+<p class="text-xs text-slate-500 uppercase tracking-widest mt-2">SKU: AUR-4402</p>
+</div>
+</div>
+<!-- Item 3 -->
+<div class="flex flex-col sm:flex-row gap-6 p-6 rounded-xl bg-neutral-dark/40 border border-primary/10 items-center sm:items-start">
+<div class="w-32 h-32 flex-shrink-0 bg-center bg-cover rounded-lg border border-primary/20" data-alt="South Sea pearl necklace with gold clasp" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuADQfuJZUf3GMwfWfoMypWerJpRkiIgFkLpq_6gbpoK-ut7FTcfzoCyml4c-rJsyt-bdo8sz156I6UXo5fT0mmqKecAs5JD6_ocBMUnl0LQqhwHtV3qiDDG6ltymH4w_WUPUh7gxA8BlI_oOCkvqnxrFt5lkYcW5xWor2X62lRTqw2QlAQO1PvtZigxHYlL1vYhEc37dEsAoeIUUtExiekoy8CKtvR-hYiOs_DM1xubGd0QKe28RSvr0BWhWiRs4kdtMP8ktKpy1IFz");'></div>
+<div class="flex flex-1 flex-col justify-between h-full text-center sm:text-left">
+<div>
+<h3 class="text-xl font-bold text-slate-100">Midnight Pearl Necklace</h3>
+<p class="text-primary/60 text-sm mt-1">Black South Sea Pearl • 18k Rose Gold</p>
+</div>
+<div class="mt-4 flex flex-wrap items-center justify-center sm:justify-start gap-6">
+<div class="flex items-center gap-3 bg-background-dark border border-primary/20 rounded-lg p-1">
+<button class="size-8 flex items-center justify-center rounded hover:bg-primary/20 transition-colors"><span class="material-symbols-outlined text-sm">remove</span></button>
+<span class="w-6 text-center font-bold">1</span>
+<button class="size-8 flex items-center justify-center rounded hover:bg-primary/20 transition-colors"><span class="material-symbols-outlined text-sm">add</span></button>
+</div>
+<button class="text-sm text-slate-400 hover:text-red-400 flex items-center gap-1 transition-colors">
+<span class="material-symbols-outlined text-lg">delete</span> Remove
+                                        </button>
+</div>
+</div>
+<div class="text-right flex flex-col items-center sm:items-end justify-between">
+<p class="text-2xl font-bold text-primary">$5,600.00</p>
+<p class="text-xs text-slate-500 uppercase tracking-widest mt-2">SKU: AUR-9015</p>
+</div>
+</div>
+</div>
+<!-- Order Summary -->
+<div class="relative">
+<div class="sticky top-28 p-8 rounded-xl bg-neutral-dark border border-primary/30 overflow-hidden">
+<!-- Subtle Golden Leaf Accent Background -->
+<div class="absolute -right-10 -bottom-10 opacity-20 pointer-events-none rotate-12">
+<img alt="" class="w-64 h-64 object-cover grayscale brightness-200" data-alt="Subtle golden leaf pattern texture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCqx47KwV5_SJbBwL4BC2c-9pT6Co6YeNu1_sEldl2WStoolQR9lkE9wzNe9Gk46O8wVJdKO7F9nLpPoSRKy5-HND9U_nuOOun2p4d9wJfw8nIWlxcKSkkzY2HCtDk1t43xgxYvoYaTJHSnK9YjlYf1e3DhPL7JfJOU0jKHuptyehcVHxOym9qXHXKeiRajb59UZxHv5l9zmAuYcX2BTui-XPJk865iyaoQ2xfCD3gXmJK6lSeaOo0wa9H5dMNImucCtjc-w0OlF59Q"/>
+</div>
+<h2 class="text-2xl font-bold mb-8 flex items-center gap-2">
+                                    Order Summary
+                                    <span class="material-symbols-outlined text-primary">auto_awesome</span>
+</h2>
+<div class="space-y-4 mb-8">
+<div class="flex justify-between text-slate-300">
+<span>Subtotal</span>
+<span>$16,250.00</span>
+</div>
+<div class="flex justify-between text-slate-300">
+<span>Estimated Shipping</span>
+<span class="text-green-400">Complimentary</span>
+</div>
+<div class="flex justify-between text-slate-300 border-b border-primary/10 pb-4">
+<span>Estimated Tax</span>
+<span>$1,381.25</span>
+</div>
+<div class="flex justify-between text-xl font-bold text-slate-100 pt-2">
+<span>Total</span>
+<span class="text-primary">$17,631.25</span>
+</div>
+</div>
+<div class="space-y-4">
+<button class="w-full bg-primary hover:bg-primary/90 text-background-dark font-bold py-4 rounded-lg transition-all transform active:scale-[0.98] shadow-lg shadow-primary/20 flex items-center justify-center gap-2">
+                                        PROCEED TO CHECKOUT
+                                        <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+<div class="flex flex-col gap-3 mt-6">
+<div class="flex items-center gap-3 text-xs text-slate-400">
+<span class="material-symbols-outlined text-primary text-sm">verified_user</span>
+                                            Secure end-to-end encrypted checkout
+                                        </div>
+<div class="flex items-center gap-3 text-xs text-slate-400">
+<span class="material-symbols-outlined text-primary text-sm">local_shipping</span>
+                                            Insured white-glove delivery
+                                        </div>
+<div class="flex items-center gap-3 text-xs text-slate-400">
+<span class="material-symbols-outlined text-primary text-sm">eco</span>
+                                            Ethically sourced materials &amp; packaging
+                                        </div>
+</div>
+</div>
+<!-- Decorative Leaf Accents from component description -->
+<div class="mt-8 pt-6 border-t border-primary/10 flex justify-center gap-4 opacity-50">
+<div class="text-primary animate-pulse">
+<span class="material-symbols-outlined">eco</span>
+</div>
+<div class="text-primary animate-pulse delay-700">
+<span class="material-symbols-outlined">yard</span>
+</div>
+<div class="text-primary animate-pulse delay-300">
+<span class="material-symbols-outlined">nature</span>
+</div>
+</div>
+</div>
+<div class="mt-6 p-6 rounded-xl border border-primary/10 bg-neutral-dark/20 text-center">
+<p class="text-sm italic text-slate-400">"Jewelry is the most transformative thing you can wear."</p>
+</div>
+</div>
+</div>
+<!-- Recommended Section -->
+<div class="mt-20">
+<h3 class="text-2xl font-bold mb-8">Complete the Look</h3>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+<div class="group cursor-pointer">
+<div class="aspect-square rounded-xl overflow-hidden mb-4 border border-primary/10 bg-neutral-dark/40 relative">
+<img class="w-full h-full object-cover transition-transform group-hover:scale-110" data-alt="Luxury gold bracelet with diamond accents" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBqYnU6JxjDK2hSwWeV8j60XgQCLXX95DPOmhvwF6dzajCbtO0GVTX6Iu3yvw0uch_kxl7-H7fX_m22515EwUn6WgP71NzHiKcN8O8mSG2hogIZt_t-QVkFNk05CSOyllQ9UFWgoTltzZG3aK979pRVTYpVIHAsznNvXhWnArt8_hvOSP5YGJ0qNz_gSgXV9e8GM82tzcFRC96KLjCPk1M0BgNRytE8uF8eRD8oZ-eGXI1ZJqXkUaeEV5xKNu-0mQb9FHP1Xr0Redkt"/>
+<button class="absolute bottom-4 right-4 bg-background-dark/80 backdrop-blur-md size-10 rounded-full flex items-center justify-center text-primary opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined">add_shopping_cart</span>
+</button>
+</div>
+<p class="font-bold text-slate-100">Serpent Bracelet</p>
+<p class="text-primary">$3,400.00</p>
+</div>
+<div class="group cursor-pointer">
+<div class="aspect-square rounded-xl overflow-hidden mb-4 border border-primary/10 bg-neutral-dark/40 relative">
+<img class="w-full h-full object-cover transition-transform group-hover:scale-110" data-alt="Delicate rose gold pendant necklace" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCYw0xWk5bdy_mMud4XFIV9SH6uS2Gb82qrRsEWMV6NTvJ-QhuHmKqtZpM1jt8g4VmaP5zojSeScuIEoQgxn8SESrlw_y8DfT5w1NUUeC_aHg998H05ArBMCVh0Aq8O13OfT8OcNH6PkjDPi2EPI8CyOPGfjxGTH_Z2VKtd3PTac6ounWFuQDFz33uJykftNdy1Gm5G8aVdG40egt--25wOY1wzLcxWytDVnZ9860HgUaj9hdqjK7hgLOZ-JnHhyqDFmP3W3UK1EhKf"/>
+<button class="absolute bottom-4 right-4 bg-background-dark/80 backdrop-blur-md size-10 rounded-full flex items-center justify-center text-primary opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined">add_shopping_cart</span>
+</button>
+</div>
+<p class="font-bold text-slate-100">Rose Petal Pendant</p>
+<p class="text-primary">$1,850.00</p>
+</div>
+</div>
+</div>
+</div>
+</main>
+<footer class="mt-20 border-t border-primary/10 py-12 px-6 md:px-20 bg-background-dark/80">
+<div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-2xl">storm</span>
+<span class="text-xl font-bold tracking-widest uppercase">Aurelia</span>
+</div>
+<div class="flex gap-8 text-sm text-slate-400">
+<a class="hover:text-primary transition-colors" href="#">Privacy Policy</a>
+<a class="hover:text-primary transition-colors" href="#">Terms of Service</a>
+<a class="hover:text-primary transition-colors" href="#">Shipping &amp; Returns</a>
+</div>
+<p class="text-xs text-slate-500">© 2024 Aurelia Fine Jewelry. All Rights Reserved.</p>
+</div>
+</footer>
+</div>
+</div>
+</body></html>

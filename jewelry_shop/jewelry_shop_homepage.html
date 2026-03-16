@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              colors: {
+                "primary": "#d4af35",
+                "background-light": "#f8f7f6",
+                "background-dark": "#1a0b2e", // Deep purple derived background
+                "accent-purple": "#2d164d",
+              },
+              fontFamily: {
+                "display": ["Inter", "sans-serif"]
+              },
+              borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+            },
+          },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .bg-purple-deep {
+            background-color: #1a0b2e;
+        }
+        .gold-glow {
+            box-shadow: 0 0 20px rgba(212, 175, 53, 0.2);
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-display selection:bg-primary selection:text-background-dark">
+<div class="relative min-h-screen flex flex-col overflow-x-hidden">
+<!-- Decorative Elements -->
+<img class="absolute top-0 left-0 w-64 h-64 opacity-40 pointer-events-none z-0 rotate-12" data-alt="Golden ornate flower decorative element" src="https://lh3.googleusercontent.com/aida-public/AB6AXuChnQ1ZCCMFsnxDpkYtGvlVL9aQTxpTtY1JoCQpB-bPqdvGf4pLr2cR9ueM3iNkI3abqjIpDllC7DrO4xQWXzNMnYT_3oSof6EUUbDyDd9fcW2mV4ZwNJfkXm9paf4E6WLt-tFatKZmiw5-pbrq3fj-BBGEMZtZIX1gZwwd1HRG-4crJsKBVvnCHH9kFUUqll2yLEAzNfEDHRnJeZBC0UdO3kBW9vB6Di3Z6KpZipJ7tQRZ4ofV5Gy0uhpcgEYpkE2zzIgOKsshetw3"/>
+<img class="absolute bottom-0 right-0 w-80 h-80 opacity-30 pointer-events-none z-0 -rotate-12" data-alt="Golden leaf vine decorative accent" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDTeHbvSgqhBvp9qIFZy8xkPH22cHbORSmoQHGgA4OendI_aYSRAgjwCyBRO7hCTee_AnS56yCY_HO_5w_9ig_YYf8iAIycLB41U4iS4NC-UU09SvPNV0_fMwDohEeAQkXVtlW6Q3tjeD61vTR2tNIGDj6lVjxveZ2oKSMKiBNvurQpyDOLhyiRfqltrEFXTM_pucFczUYe4_ETA9kh5KkQhOG9Z728iNlyYIM5RQs-eCVe16sZwCmTIq3HA0p_EV3Uxm53OMyR4bjH"/>
+<img class="absolute top-1/2 -right-20 w-48 h-48 opacity-20 pointer-events-none z-0" data-alt="Golden floral flourish pattern" src="https://lh3.googleusercontent.com/aida-public/AB6AXuANrvm2Ge3ThRUtAlCprAzb830zT2RA2Tl02t1FGpi2LtfS-FMwFPg0NO4zPa1xKkkda0qvGrrX04sAIo84zMGQpYJ9vxh4_MbsK7rC5lp4050IaSEJud95J7MQhNQT42n9uvskJHhM63eAdmYrs60iZFwU_JJHkDBLDh4NQajK97kBPaFGQDfat96qcCCWtuLrq1ES-2zv4P49DBwsrBiL9GLNPk3YkL9QsXFtCEyCRJkEh-jFlRyUpJvGXJOXYkbgcCm4HxJX3SOU"/>
+<div class="layout-container flex h-full grow flex-col z-10">
+<!-- Navigation Bar -->
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-primary/20 px-6 md:px-20 py-5 bg-background-dark/80 backdrop-blur-md sticky top-0 z-50">
+<div class="flex items-center gap-12">
+<div class="flex items-center gap-3 text-primary">
+<span class="material-symbols-outlined text-3xl">diamond</span>
+<h2 class="text-white text-2xl font-black leading-tight tracking-tight">LUXE</h2>
+</div>
+<nav class="hidden md:flex items-center gap-10">
+<a class="text-slate-100 hover:text-primary transition-colors text-sm font-medium uppercase tracking-widest" href="#">Home</a>
+<a class="text-slate-100 hover:text-primary transition-colors text-sm font-medium uppercase tracking-widest" href="#">Collections</a>
+<a class="text-slate-100 hover:text-primary transition-colors text-sm font-medium uppercase tracking-widest" href="#">About</a>
+<a class="text-slate-100 hover:text-primary transition-colors text-sm font-medium uppercase tracking-widest" href="#">Cart</a>
+</nav>
+</div>
+<div class="flex items-center gap-6">
+<div class="hidden sm:flex items-center bg-accent-purple/50 border border-primary/20 rounded-full px-4 py-1.5">
+<span class="material-symbols-outlined text-primary text-xl">search</span>
+<input class="bg-transparent border-none focus:ring-0 text-sm text-white placeholder:text-primary/50 w-32 lg:w-48" placeholder="Search gems..." type="text"/>
+</div>
+<button class="relative p-2 text-primary hover:bg-primary/10 rounded-full transition-all">
+<span class="material-symbols-outlined">shopping_bag</span>
+<span class="absolute top-0 right-0 bg-primary text-background-dark text-[10px] font-bold w-4 h-4 flex items-center justify-center rounded-full">2</span>
+</button>
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</header>
+<!-- Hero Section -->
+<main class="flex-1">
+<div class="px-6 md:px-20 py-10">
+<div class="@container">
+<div class="relative overflow-hidden rounded-xl bg-accent-purple border border-primary/10 gold-glow">
+<div class="flex flex-col lg:flex-row min-h-[600px]">
+<!-- Text Content -->
+<div class="flex-1 flex flex-col justify-center p-8 md:p-16 z-20 bg-gradient-to-r from-background-dark via-background-dark/80 to-transparent">
+<span class="text-primary font-semibold tracking-[0.3em] uppercase mb-4 block">New Arrival</span>
+<h1 class="text-white text-5xl md:text-7xl font-black leading-tight tracking-tight mb-6">
+                                    The Eternal <br/><span class="text-primary">Radiance</span>
+</h1>
+<p class="text-slate-300 text-lg md:text-xl max-w-lg mb-10 leading-relaxed font-light">
+                                    A masterpiece of light and shadow. Hand-crafted 24k gold necklace featuring rare ethically sourced diamonds.
+                                </p>
+<div class="flex flex-wrap gap-4">
+<button class="flex min-w-[200px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-14 px-8 bg-primary text-background-dark text-base font-bold uppercase tracking-wider hover:bg-white hover:scale-105 transition-all shadow-lg shadow-primary/20">
+                                        Shop the Collection
+                                    </button>
+<button class="flex min-w-[200px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-14 px-8 border-2 border-primary/40 text-primary text-base font-bold uppercase tracking-wider hover:bg-primary/10 transition-all">
+                                        View Details
+                                    </button>
+</div>
+</div>
+<!-- Image Container -->
+<div class="flex-1 relative min-h-[400px] lg:min-h-full">
+<div class="absolute inset-0 bg-center bg-no-repeat bg-cover" data-alt="Stunning diamond necklace on a dark velvet display" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA-YgJDgLef78w99VIrzF7JgP6EQq-0MMA2tlWeBNHaSRpDCBQ8jBOLxOmG8VWvr6xNZsNMxSbBmFi5UFtKzmqZUhdEMxobiZwyP4NPbZKTmYhMWamsmNxUNE_AUJVBgUBeBt0OSfR4II093YKuHycshTOt0LsvEDtXJpPoPr_fdtnB9ptuErR70K5EYH-SdDv2F6MuG39hGl_-GL8_xaZ453-Aq1CcPsmq8fHlpcwMwHMVfXHFvf5sagPs0sVmfWMhGZ_PEzzJk2dE");'>
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-background-dark/60 to-transparent lg:hidden"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Featured Categories -->
+<section class="px-6 md:px-20 pb-20">
+<div class="flex items-end justify-between mb-10 border-l-4 border-primary pl-6">
+<div>
+<h2 class="text-white text-3xl font-bold tracking-tight">Our Signature Suites</h2>
+<p class="text-primary/80 mt-2">Curated brilliance for every occasion</p>
+</div>
+<a class="hidden sm:flex items-center gap-2 text-primary hover:underline font-bold uppercase text-xs tracking-widest" href="#">
+                        Browse All <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Category 1 -->
+<div class="group relative overflow-hidden rounded-xl aspect-[4/5] border border-primary/10">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="Elegant gold diamond rings collection" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBG5S6JDl-qpWPjCgPZYz4LRoTxViJf866iIFYp72cd1LwkSfpt8wuX-m_Cesb_CgurJxDgiYOMK5CQRP2-2aseNx3_NppiI1e3WPcNFyqSrk8lq7QYZfRKLI1S1ItXkGzTQqG276-Q2up7gWrHXj21AVXFJzunmMttzKsEk25_tdJaNGKQnacLYy5ZSpta-rSr_ah_Nb_fwy8KMkzV1HRlujD0u0oKi_iJP2YOxyHfw9LKzB8nopHv4DvyZ8U9U4pU9GSkvJnG2mkk");'></div>
+<div class="absolute inset-0 bg-gradient-to-t from-background-dark via-transparent to-transparent opacity-80"></div>
+<div class="absolute bottom-0 left-0 p-8">
+<h3 class="text-white text-2xl font-bold mb-2">Eternal Rings</h3>
+<p class="text-slate-300 text-sm mb-4">Timeless bands for forever</p>
+<span class="text-primary text-sm font-bold uppercase tracking-widest border-b border-primary">Explore</span>
+</div>
+</div>
+<!-- Category 2 -->
+<div class="group relative overflow-hidden rounded-xl aspect-[4/5] border border-primary/10">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="Sparkling diamond earrings collection" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCVxF1DyBCGkQ_vKVAR4QgbvdfpHcFh-eL7IZWsqDEMvS0bblf_66x3qmMY6mSZLOSMQsTvFQFG6m5YyWD5ALAMeHZ-SoSxrWJ2Rvz6tklGsY7E9_GaG1_zBIQ1HGBG1o05owhhZIEqeZiNKNKm4E34R1YTgSaH71ASiS529v8aM1-WMEv-y8RfQqLnnWdZseInOSx0ZjDiCI0qb9RRfItEu7QIQlnFVaRnA_qHPR6Lb9UbslShst3X9nzD2dJzAk5cQ-tXfaRtXJ78");'></div>
+<div class="absolute inset-0 bg-gradient-to-t from-background-dark via-transparent to-transparent opacity-80"></div>
+<div class="absolute bottom-0 left-0 p-8">
+<h3 class="text-white text-2xl font-bold mb-2">Celestial Studs</h3>
+<p class="text-slate-300 text-sm mb-4">Capture the night sky</p>
+<span class="text-primary text-sm font-bold uppercase tracking-widest border-b border-primary">Explore</span>
+</div>
+</div>
+<!-- Category 3 -->
+<div class="group relative overflow-hidden rounded-xl aspect-[4/5] border border-primary/10">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="Luxury gold bracelets and bangles" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDBUsfh9pQn4fn66tdPjInHoTmf_A5ZuVgFmh3wdKbbc-SxSoPWO5HUE3tUZwrk18U294XYpJ__9jCCEFQKVcnPjKr_CmN1MNAkb1MilxVV66IHpzaCsUlgEnnFzx5As_mQlmKVKuyA7TkeNvJN5dWuk8Y6Cknq0Ex3m8NCBdD8kjX8l0EZjXJy3ERUF2td44LTfzEftygtMxaDk6K9_47kFZBnqJPapAdCoJBwQwB2IUjTEWmeOv489uMOQIJ_H1SggllOvVyaHVw3");'></div>
+<div class="absolute inset-0 bg-gradient-to-t from-background-dark via-transparent to-transparent opacity-80"></div>
+<div class="absolute bottom-0 left-0 p-8">
+<h3 class="text-white text-2xl font-bold mb-2">Golden Cuffs</h3>
+<p class="text-slate-300 text-sm mb-4">Bold statements of luxury</p>
+<span class="text-primary text-sm font-bold uppercase tracking-widest border-b border-primary">Explore</span>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-accent-purple/30 border-t border-primary/10 py-12 px-6 md:px-20">
+<div class="flex flex-col md:flex-row justify-between items-start gap-12">
+<div class="max-w-sm">
+<div class="flex items-center gap-3 text-primary mb-6">
+<span class="material-symbols-outlined text-3xl">diamond</span>
+<h2 class="text-white text-2xl font-black">LUXE</h2>
+</div>
+<p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Crafting excellence since 1924. Every piece in our collection tells a story of heritage, precision, and unparalleled beauty.
+                    </p>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full border border-primary/20 flex items-center justify-center text-primary hover:bg-primary hover:text-background-dark transition-all" href="#">
+<span class="material-symbols-outlined text-lg">public</span>
+</a>
+<a class="w-10 h-10 rounded-full border border-primary/20 flex items-center justify-center text-primary hover:bg-primary hover:text-background-dark transition-all" href="#">
+<span class="material-symbols-outlined text-lg">camera</span>
+</a>
+<a class="w-10 h-10 rounded-full border border-primary/20 flex items-center justify-center text-primary hover:bg-primary hover:text-background-dark transition-all" href="#">
+<span class="material-symbols-outlined text-lg">mail</span>
+</a>
+</div>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-12 w-full md:w-auto">
+<div>
+<h4 class="text-white font-bold uppercase tracking-widest text-xs mb-6">Shop</h4>
+<ul class="space-y-4 text-sm text-slate-400">
+<li><a class="hover:text-primary transition-colors" href="#">Necklaces</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Engagement</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Watches</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Gifts</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-white font-bold uppercase tracking-widest text-xs mb-6">Support</h4>
+<ul class="space-y-4 text-sm text-slate-400">
+<li><a class="hover:text-primary transition-colors" href="#">Care Guide</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Shipping</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Returns</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Concierge</a></li>
+</ul>
+</div>
+<div class="col-span-2 sm:col-span-1">
+<h4 class="text-white font-bold uppercase tracking-widest text-xs mb-6">Visit</h4>
+<p class="text-sm text-slate-400 leading-relaxed">
+                            Flagship Boutique<br/>
+                            5th Avenue, New York<br/>
+                            NY 10022
+                        </p>
+</div>
+</div>
+</div>
+<div class="mt-20 pt-8 border-t border-primary/5 flex flex-col sm:flex-row justify-between items-center gap-4 text-[10px] text-slate-500 uppercase tracking-widest">
+<p>© 2024 LUXE Jewelry. All rights reserved.</p>
+<div class="flex gap-8">
+<a class="hover:text-primary" href="#">Privacy Policy</a>
+<a class="hover:text-primary" href="#">Terms of Service</a>
+</div>
+</div>
+</footer>
+</div>
+</div>
+</body></html>

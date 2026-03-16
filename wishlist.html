@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Heart's Arc | Wishlist</title>
+    <meta content="Saved favorites and wishlist selections for Heart's Arc." name="description" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Caveat:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link href="assets/logo.css" rel="stylesheet" />
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#D4AF35",
+              "background-light": "#f8f7f6",
+              "background-dark": "#1a0b2e",
+              "accent-purple": "#2d164d",
+            },
+            fontFamily: {
+              display: ["Inter", "sans-serif"],
+            },
+            borderRadius: {
+              DEFAULT: "0.625rem",
+              lg: "0.625rem",
+              xl: "0.625rem",
+              full: "9999px",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-display selection:bg-primary selection:text-background-dark min-h-screen">
+    <div class="relative flex min-h-screen flex-col overflow-x-hidden">
+      <header class="relative z-10 flex items-center justify-between whitespace-nowrap border-b border-solid border-primary/20 px-6 md:px-20 py-5 bg-background-dark/80 backdrop-blur-md sticky top-0 z-50">
+        <div class="header-brand flex items-center gap-12">
+          <div class="header-brand flex items-center gap-3 text-primary">
+            <div class="logo-lockup">
+              <span class="logo-wordmark">HEART'S ARC</span>
+              <span class="logo-tagline">har tohfa ek ehsaas</span>
+            </div>
+          </div>
+          <nav class="header-nav hidden md:flex items-center gap-10">
+            <a class="nav-link text-slate-100 hover:text-primary transition-colors text-sm font-medium uppercase tracking-widest" href="index.html">Home</a>
+            <a class="nav-link text-slate-100 hover:text-primary transition-colors text-sm font-medium uppercase tracking-widest" href="gallery.html">Collections</a>
+            <a class="nav-link text-slate-100 hover:text-primary transition-colors text-sm font-medium uppercase tracking-widest" href="about.html">About</a>
+          </nav>
+        </div>
+        <div class="header-tools flex items-center gap-4">
+          <div class="header-tools hidden sm:flex items-center bg-accent-purple/50 border border-primary/20 rounded-full px-4 py-1">
+            <span class="material-symbols-outlined text-primary text-xl">search</span>
+            <input class="bg-transparent border-none focus:ring-0 text-sm text-white placeholder:text-primary/50 w-32 lg:w-48" placeholder="Search gems..." type="text" />
+          </div>
+          <div class="flex gap-2">
+            <a class="flex size-10 items-center justify-center rounded-lg bg-primary text-background-dark transition-colors" href="wishlist.html" aria-label="Wishlist">
+              <span class="material-symbols-outlined">favorite</span>
+            </a>
+            <a class="flex size-10 items-center justify-center rounded-lg bg-accent-purple/70 text-slate-100 hover:bg-primary hover:text-background-dark transition-colors relative" href="cart.html" aria-label="Shopping bag">
+              <span class="material-symbols-outlined">shopping_bag</span>
+              <span class="absolute -top-1 -right-1 bg-primary text-background-dark text-[10px] font-bold size-4 flex items-center justify-center rounded-full">2</span>
+            </a>
+            <a class="flex size-10 items-center justify-center rounded-lg bg-accent-purple/70 text-slate-100 hover:bg-primary hover:text-background-dark transition-colors" href="profile.html" aria-label="Profile">
+              <span class="material-symbols-outlined">person</span>
+            </a>
+          </div>
+        </div>
+      </header>
+
+      <main class="flex-1 px-6 md:px-20 py-12">
+        <section class="max-w-6xl mx-auto">
+          <div class="mb-10">
+            <span class="text-primary text-xs font-bold uppercase tracking-[0.3em]">Wishlist</span>
+            <h1 class="text-4xl md:text-5xl font-black text-white mt-4 mb-4">Pieces you want to keep close.</h1>
+            <p class="text-slate-300 text-lg max-w-3xl">Save signature pieces, compare favorites, and move them into your bag whenever the moment feels right.</p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="rounded-xl border border-primary/10 bg-white/5 overflow-hidden">
+              <div class="aspect-[4/5] bg-cover bg-center" style='background-image:url("https://lh3.googleusercontent.com/aida-public/AB6AXuBE63Rc8POtfi-lQh107NxfNPa67wAldS9mS4UrKd_t-i6gFq2eRKCDWQ78qzPx1lIZq24EwkumgC55lCs3WdZNFu0b9A_bX5sLR3invgC0-H9uobt4YwUPEP21iWxE24LW65GmRn43Nkrpr-mjtY2rHUZr1aAAtAUYSUXZCBnHlBpJR9H9VNBd5GE9dXrtPSkPo9xYl-1w_cIqtIeoaa10ZLuyd-B3SL0smaimNU_1aymm3dIXTNko9Gjyy2aqOjR23zKTz3qVZaMG");'></div>
+              <div class="p-6">
+                <div class="flex items-center justify-between mb-2">
+                  <h2 class="text-xl font-bold text-white">Astral Solitaire Ring</h2>
+                  <span class="text-primary font-bold">$14,200</span>
+                </div>
+                <p class="text-sm text-slate-400 mb-6">A proposal favorite with timeless lines and certified brilliance.</p>
+                <div class="flex gap-3">
+                  <a class="flex-1 rounded-lg bg-primary px-4 py-3 text-center text-sm font-bold uppercase tracking-widest text-background-dark" href="cart.html">Move to Bag</a>
+                  <a class="rounded-lg border border-primary/20 px-4 py-3 text-sm font-bold uppercase tracking-widest text-primary" href="details.html">View</a>
+                </div>
+              </div>
+            </div>
+            <div class="rounded-xl border border-primary/10 bg-white/5 overflow-hidden">
+              <div class="aspect-[4/5] bg-cover bg-center" style='background-image:url("https://lh3.googleusercontent.com/aida-public/AB6AXuC3fVBGgoyJNeaoyjjjZGE5tlGjE_e1E3q8_-nJSkRVTKlRmtlbNIwkAGtZslSiyukKmqBjH_QYK-cWY14TI8hl6mjbL_a1C6HRErjsd6Ia92TLzQVO815o3kKeYHqgyPLKyzqK5KSkuuYRX2yDRIXpB1SjFKrpw4473fqZq9nbLdNp9nl6NsA56ytaKhDQF-QVgmriLA2kyFCsUbhFExDB-woGauk5fVQFRj7D3l0C0QAGyscyHhdJLAhjWdaPYeSH-K9AQIf8yrN-");'></div>
+              <div class="p-6">
+                <div class="flex items-center justify-between mb-2">
+                  <h2 class="text-xl font-bold text-white">Veridian Drop Earrings</h2>
+                  <span class="text-primary font-bold">$8,900</span>
+                </div>
+                <p class="text-sm text-slate-400 mb-6">A bridal and occasion pick saved for future gifting.</p>
+                <div class="flex gap-3">
+                  <a class="flex-1 rounded-lg bg-primary px-4 py-3 text-center text-sm font-bold uppercase tracking-widest text-background-dark" href="cart.html">Move to Bag</a>
+                  <a class="rounded-lg border border-primary/20 px-4 py-3 text-sm font-bold uppercase tracking-widest text-primary" href="details.html">View</a>
+                </div>
+              </div>
+            </div>
+            <div class="rounded-xl border border-dashed border-primary/20 bg-black/10 p-8 flex flex-col items-center justify-center text-center min-h-[420px]">
+              <span class="material-symbols-outlined text-primary text-5xl mb-4">favorite</span>
+              <h2 class="text-2xl font-bold text-white mb-3">Keep discovering</h2>
+              <p class="text-sm text-slate-400 max-w-xs mb-6">Browse more pieces and save the ones you want to compare, gift, or return to later.</p>
+              <a class="rounded-lg border border-primary px-5 py-3 text-sm font-bold uppercase tracking-widest text-primary hover:bg-primary hover:text-background-dark transition-colors" href="gallery.html">Explore Collection</a>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="relative z-10 bg-accent-purple/30 border-t border-primary/10 py-12 px-6 md:px-20">
+        <div class="flex flex-col md:flex-row justify-between items-start gap-12">
+          <div class="max-w-sm">
+            <div class="flex items-center gap-3 text-primary mb-6">
+              <div class="logo-lockup logo-lockup--footer">
+                <span class="logo-wordmark">HEART'S ARC</span>
+                <span class="logo-tagline">har tohfa ek ehsaas</span>
+              </div>
+            </div>
+            <p class="text-slate-400 text-sm leading-relaxed mb-6">
+              A premium jewelry boutique shaped for gifting, trust, and quiet luxury. Discover certified pieces, concierge support, and beautifully wrapped delivery.
+            </p>
+            <div class="flex gap-4">
+              <a class="w-10 h-10 rounded-full border border-primary/20 flex items-center justify-center text-primary hover:bg-primary hover:text-background-dark transition-all" href="#"><span class="material-symbols-outlined text-lg">public</span></a>
+              <a class="w-10 h-10 rounded-full border border-primary/20 flex items-center justify-center text-primary hover:bg-primary hover:text-background-dark transition-all" href="#"><span class="material-symbols-outlined text-lg">camera</span></a>
+              <a class="w-10 h-10 rounded-full border border-primary/20 flex items-center justify-center text-primary hover:bg-primary hover:text-background-dark transition-all" href="#"><span class="material-symbols-outlined text-lg">mail</span></a>
+            </div>
+          </div>
+          <div class="grid grid-cols-2 sm:grid-cols-3 gap-12 w-full md:w-auto">
+            <div>
+              <h4 class="text-white font-bold uppercase tracking-widest text-xs mb-6">Shop</h4>
+              <ul class="space-y-4 text-sm text-slate-400">
+                <li><a class="hover:text-primary transition-colors" href="gallery.html">Giftable Jewelry</a></li>
+                <li><a class="hover:text-primary transition-colors" href="gallery.html">Bridal & Anniversary</a></li>
+                <li><a class="hover:text-primary transition-colors" href="gallery.html">New Arrivals</a></li>
+                <li><a class="hover:text-primary transition-colors" href="details.html">Featured Piece</a></li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="text-white font-bold uppercase tracking-widest text-xs mb-6">Support</h4>
+              <ul class="space-y-4 text-sm text-slate-400">
+                <li><a class="hover:text-primary transition-colors" href="support.html#care">Care Guide</a></li>
+                <li><a class="hover:text-primary transition-colors" href="support.html#shipping">Shipping</a></li>
+                <li><a class="hover:text-primary transition-colors" href="support.html#returns">Returns</a></li>
+                <li><a class="hover:text-primary transition-colors" href="support.html#contact">Concierge</a></li>
+              </ul>
+            </div>
+            <div class="col-span-2 sm:col-span-1">
+              <h4 class="text-white font-bold uppercase tracking-widest text-xs mb-6">Contact</h4>
+              <p class="text-sm text-slate-400 leading-relaxed">
+                Concierge: +91 98765 43210<br />
+                hello@heartsarc.com<br />
+                Mon-Sat, 10AM-7PM IST
+              </p>
+              <div class="mt-6 flex gap-2">
+                <input class="flex-1 bg-white/5 border border-primary/15 rounded-lg px-4 py-2.5 text-sm text-slate-100 focus:ring-primary focus:border-primary" placeholder="Email Address" type="email" />
+                <button class="bg-primary text-background-dark px-4 py-2.5 rounded-lg font-bold text-xs uppercase transition-all hover:brightness-110">Join</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mt-20 pt-8 border-t border-primary/5 flex flex-col sm:flex-row justify-between items-center gap-4 text-[10px] text-slate-500 uppercase tracking-widest">
+          <p>© 2026 HEART'S ARC. All rights reserved.</p>
+          <div class="flex gap-8">
+            <a class="hover:text-primary" href="support.html#faq">FAQs</a>
+            <a class="hover:text-primary" href="support.html#track">Track Order</a>
+            <a class="hover:text-primary" href="support.html#shipping">Shipping & Returns</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
