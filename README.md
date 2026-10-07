@@ -20,3 +20,7 @@ This site is plain HTML, CSS, and JavaScript, so it can be published directly wi
 ## Reference source
 
 The original mock HTML and screenshot references are preserved in `jewelry_shop/`.
+
+---
+
+Created with ❤️ by Prasad at KSM × Tech Studio.
